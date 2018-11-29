@@ -486,6 +486,12 @@
             Get all developers
             </summary>
         </member>
+        <member name="M:DevContactDirectory.Controllers.DeveloperController.GetByCategory(System.Int32)">
+            <summary>
+            Gets All Developers in a particular category
+            </summary>
+            <param name="id"></param>
+        </member>
         <member name="M:DevContactDirectory.Controllers.DeveloperController.Get(System.Int32)">
             <summary>
             Gets a single developer

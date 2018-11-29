@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace DevContactDirectory.Controllers
 {
+	[RoutePrefix("api/developer")]
     public class DeveloperController : ApiController
     {
         private DeveloperRepository DeveloperRepository;
@@ -25,6 +26,23 @@ namespace DevContactDirectory.Controllers
         public IHttpActionResult Get()
         {
             var model =  DeveloperRepository.GetAll().Select(a => new DeveloperViewModel{ Firstname = a.Firstname , Lastname = a.Lastname, Email = a.Email , Category = a.Category.Name , Id = a.Id });
+
+            return Ok(model);
+        }
+		
+		/// <summary>
+        /// Gets All Developers in a particular category
+        /// </summary>
+        /// <param name="id"></param>
+        [Route("GetByCategory/{id}")]
+        public IHttpActionResult GetByCategory(int id)
+        {
+            if (id < 0)
+            {
+                return BadRequest();
+            }
+
+            var model =  DeveloperRepository.GetAll(a=>a.CategoryId == id).Select(a => new DeveloperViewModel{ Firstname = a.Firstname , Lastname = a.Lastname, Email = a.Email , Category = a.Category.Name , Id = a.Id });
 
             return Ok(model);
         }

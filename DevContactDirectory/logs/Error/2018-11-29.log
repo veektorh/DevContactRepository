@@ -5,3 +5,10 @@
 2018-11-29 09:26:05.6171 ERROR Namespace:DeveloperRepository || 	 Method: GetById() ||	 Ex.Msg : Object reference not set to an instance of an object.
 2018-11-29 09:42:52.9214 ERROR Namespace:DeveloperRepository || 	 Method: GetById() ||	 Ex.Msg : Object reference not set to an instance of an object.
 2018-11-29 11:22:56.3707 ERROR Namespace:DeveloperRepository || 	 Method: GetById() ||	 Ex.Msg : Object reference not set to an instance of an object.
+2018-11-29 12:04:45.4036 ERROR Namespace:DeveloperRepository || 	 Method: GetAll(predicate) ||	 Ex.Msg : Login failed for user 'sa'.
+2018-11-29 12:04:54.5827 ERROR Namespace:DeveloperRepository || 	 Method: GetAll(predicate) ||	 Ex.Msg : Login failed for user 'sa'.
+2018-11-29 12:05:00.2394 ERROR Namespace:DeveloperRepository || 	 Method: GetAll ||	 Ex.Msg : Login failed for user 'sa'.
+2018-11-29 12:05:07.8183 ERROR Namespace:DeveloperRepository || 	 Method: GetAll ||	 Ex.Msg : Login failed for user 'sa'.
+2018-11-29 12:06:01.7109 ERROR Namespace:DeveloperRepository || 	 Method: GetAll(predicate) ||	 Ex.Msg : Login failed for user 'sa'.
+2018-11-29 12:06:07.2810 ERROR Namespace:DeveloperRepository || 	 Method: GetAll ||	 Ex.Msg : Login failed for user 'sa'.
+2018-11-29 12:06:36.4355 ERROR Namespace:DeveloperRepository || 	 Method: GetAll ||	 Ex.Msg : Login failed for user 'sa'.
